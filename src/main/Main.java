@@ -33,9 +33,9 @@ public class Main {
         // System.out.println(a1.getListeLivre().toString());
         // System.out.println(a1.getListeLivre().get(0).toString());
 
-        Realisateur r1 = new Realisateur("Jean", "Kevin",new Date(2000, Calendar.OCTOBER, 24));
-        DVD dvd1 = new DVD("6546", "34534LELIVREEU", 53, 53, r1);
-        DVD dvd2 = new DVD("6353546", "34534LELIVrgfdgREEU", 53, 53, r1);
+        Realisateur r1 = new Realisateur("Jean", "Kevin", new Date(2000, Calendar.OCTOBER, 24));
+        DVD dvd1 = new DVD("6546", "34534REEU", 53, 53, r1);
+        DVD dvd2 = new DVD("6353546", "34534LEREEU", 53, 53, r1);
         r1.ajout((dvd1));
         r1.ajout((dvd2));
         System.out.println(r1.getListeDVD().toString());

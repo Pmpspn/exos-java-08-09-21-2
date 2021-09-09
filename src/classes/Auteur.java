@@ -3,7 +3,7 @@ package classes;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Auteur extends Personne{
+public class Auteur extends Personne {
     private ArrayList<Livre> listeLivre;
 
 
