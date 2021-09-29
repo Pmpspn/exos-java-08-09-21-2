@@ -5,6 +5,7 @@ public class Article {
      private String reference;
      private String designation;
      private double prix;
+     private Client client;
 
     public Article(String reference, String designation, double prix) {
         this.reference = reference;
@@ -43,5 +44,13 @@ public class Article {
                 ", designation='" + designation + '\'' +
                 ", prix=" + prix +
                 '}';
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 }

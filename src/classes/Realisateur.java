@@ -4,27 +4,27 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Realisateur extends Personne {
-    private ArrayList<DVD> listeDVD;
+    private ArrayList<Video> listeVideo;
 
 
     public Realisateur(String nom, String prenom, Date dnaissance) {
         super(nom, prenom, dnaissance);
-        this.listeDVD = new ArrayList<DVD>();
+        this.listeVideo = new ArrayList<Video>();
     }
 
-    public void ajout(DVD element) {
-        listeDVD.add(element);
+    public void ajout(Video element) {
+        listeVideo.add(element);
         element.setRealisateur(this);
     }
 
-    public ArrayList<DVD> getListeDVD() {
-        return listeDVD;
+    public ArrayList<Video> getListeDVD() {
+        return listeVideo;
     }
 
     @Override
     public String toString() {
         return "Auteur{" +
-                "listeDVD=" + listeDVD +
+                "listeDVD=" + listeVideo +
                 '}';
     }
 }
